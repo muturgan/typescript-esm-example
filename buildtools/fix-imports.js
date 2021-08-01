@@ -58,3 +58,4 @@ function fixImportsAtFile(filePath) {
 
 fixImportsAtFolder(START_PATH);
 console.log('imports fixed...');
+console.log('================');

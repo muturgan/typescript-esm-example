@@ -1,0 +1,33 @@
+{
+  "name": "typescript-esm-example",
+  "version": "1.0.0",
+  "description": "A simple node.js project example with typescript and esm",
+  "author": "Andrey Sakharov <caxap_8787@mail.ru> (https://www.linkedin.com/in/andrey-sakharov/)",
+  "license": "MIT",
+  "type": "module",
+  "module": "dist/index.js",
+  "engines": {
+    "node": "^14.17.4"
+  },
+  "scripts": {
+    "start": "npm run build && node dist/index.js",
+    "build": "(rm -rf dist || npx rimraf dist) && tsc && npm run fix_imports",
+    "fix_imports": "node buildtools/fix-imports.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muturgan/typescript-esm-example.git"
+  },
+  "keywords": ["typescript", "esm", "node"],
+  "bugs": {
+    "url": "https://github.com/muturgan/typescript-esm-example/issues"
+  },
+  "homepage": "https://github.com/muturgan/typescript-esm-example#readme",
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.9",
+    "typescript": "^4.3.5"
+  }
+}

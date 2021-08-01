@@ -1,3 +1,3 @@
 import { HELLO, WORLD } from '../constants';
 
-export const sayHello = () => console.log(`${HELLO} ${WORLD}!`);
+export const sayHello = (): void => console.log(`${HELLO} ${WORLD}!`);
